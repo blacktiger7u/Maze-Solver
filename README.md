@@ -10,16 +10,16 @@ Python Program that reads the maze from a text file, Searches the route by using
 `*` path
 
 Input:
-
+```text
  #S    #     #
  # ### # ### #
  #   #   #   #
  ### ##### # #
  #         #E#
  #############
-
+```
 ## Output
-
+```text
  #############
  #S    #     #
  #*### # ### #
@@ -27,5 +27,6 @@ Input:
  ###*#####*#*#
  #  *******#E#
  #############
+```
 the maze took 18 steps
 
