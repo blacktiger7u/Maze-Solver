@@ -1,6 +1,6 @@
 # Maze Solver
 
-Python Program that reads the maze from a text file, Searches the route by using DFS and draws the correct rout and prints the steps and the graph
+Python Program that reads the maze from a text file, Searches the route by using DFS and draws the correct rout and prints the steps and the graph. Whole project was made without AI Usage
 
 ## File format for mazes
 
