@@ -2,6 +2,9 @@ import os
 
 
 def choose_file():
+    if not os.path.exists("mazes"):
+        print("mazes folder does not exist!")
+        exit()
     files = os.listdir("mazes")
     available=[]
     for filename in files:
@@ -11,11 +14,16 @@ def choose_file():
     for x in range(len(available)):
         print(f"{x+1}. {available[x]}")
 
-    filechoice = int(input(f"choose a number between 1 and {len(available)}: "))
+    filechoice = input(f"choose a number between 1 and {len(available)}: ")
+    if filechoice.isdigit() == False:
+        print(f"invalid choice(choose a number between 1 and {len(available)} ")
+        exit()
+    filechoice = int(filechoice)
     if filechoice >= 1 and filechoice <= len(available):
-        choice = available[int(filechoice-1)]
+        choice = available[(filechoice-1)]
     else:
-        print("invalid choice!")
+        print(f"invalid choice(choose a number between 1 and {len(available)} ")
+        exit()
     return choice
 
 
